@@ -1,0 +1,147 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+  @include ease;
+
+  &__top {
+    position: relative;
+    z-index: 1;
+    font-size: $font-small;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    text-align: center;
+    background-color: $white;
+    
+    &-link {
+      text-decoration: underline;
+    }
+  }
+  
+  &__middle {
+    font-family: $font-mSemiBold;
+    font-size: 0.875rem;
+    color: $white;
+    background-color: $dark3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &-link {
+      color: $white;
+    }
+  }
+
+  &__control {
+    &-wrapper {
+      position: relative;
+
+      &:hover {
+        .header__control-list {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+      }
+    }
+
+    &-icon {
+      stroke: $white;
+      stroke-width: 2;
+      transform: translateY(1px);
+
+      @include r(576) {
+        transform: translateY(0);
+      }
+    }
+
+    &-list {
+      position: absolute;
+      right: 0;
+      padding-top: 10px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-4px);
+      @include ease-in-out;
+      background-color: $dark3;
+      z-index: 1;
+    }
+
+    &-item {
+      color: $white;
+      text-align: left;
+      white-space: nowrap;
+      width: 100%;
+    }
+  }
+
+  &__bottom {
+    position: relative;
+    color: $dark;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: $pink;
+    z-index: 1;
+
+    @include r(768) {
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      .button {
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+    }
+  }
+
+  &__logo {
+    @include hoverOpacity;
+    &-picture {
+      max-width: 154px;
+      height: auto;
+
+      @include r(768) {
+        max-width: 80px;
+      }
+    }
+  }
+
+  .header__button {
+    white-space: nowrap;
+  }
+
+  &__nav {
+    &-link {
+      color: $dark3;
+      &:not(:last-child) {
+        margin-right: 25px;
+
+        @include r(1200) {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  &--active {
+    .menu {
+      transform: translateX(0);
+
+      &__in {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.burger--active {
+  overflow: hidden;
+}
+.sticky-header {
+  .header {
+    transform: translateY(-40px);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.07);
+  }
+}

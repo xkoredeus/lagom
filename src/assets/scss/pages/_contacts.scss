@@ -1,0 +1,119 @@
+.contacts {
+  &__map {
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+    &-wrapper {
+      position: relative;
+      height: 400px;
+
+      @include rmin(1200) {
+        .container {
+          position: relative;
+          height: 100%;
+        }
+      }
+
+      @include r(1200) {
+        height: 300px;
+      }
+    }
+
+    &-info {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: $midGray;
+      height: 100%;
+      padding: 25px 35px;
+      max-width: 430px;
+      z-index: 1;
+    }
+  }
+
+  &-picture {
+    position: absolute;
+    width: 160%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    @include cv;
+
+    @include r(1200) {
+      width: 100%;
+    }
+
+    &__wrapper {
+      position: relative;
+      min-height: 251px;
+      height: 100%;
+
+      @include r(1200) {
+        max-width: 570px;
+      }
+
+      @include r(576) {
+        min-height: 120px;
+      }
+    }
+  }
+}
+
+.balloon {
+  &__content {
+    position: relative;
+    padding-bottom: 10px;
+    transform: translateY(-50px) translateX(-10px);
+  }
+
+  &__in {
+    position: relative;
+    background-color: $white;
+    width: 120px;
+    height: 80px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
+    transform: translateX(-10px);
+
+    @include r(1200) {
+      width: 100px;
+      height: 70px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 15px;
+      height: 15px;
+      background-color: $white;
+      transform: rotate(-45deg);
+      bottom: -6px;
+      left: 10px;
+    }
+  }
+
+  &__logo {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 5px;
+
+    @include r(1200) {
+      max-width: 60px;
+      height: auto;
+    }
+  }
+}
+
+.mapboxgl-ctrl-logo {
+  z-index: -1 !important; // This is 1000 by default
+  position: absolute;
+  bottom: -200px;
+  pointer-events: none;
+}
+
+.mapboxgl-marker {
+  background: none !important;
+}

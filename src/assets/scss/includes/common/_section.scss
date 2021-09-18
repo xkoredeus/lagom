@@ -1,0 +1,138 @@
+.section {
+  &--padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include rmin(1200) {
+      &-big {
+        padding-top: 120px;
+        padding-bottom: 120px;
+      }
+    }
+
+    @include r(972) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    @include r(600) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    @include r(400) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    &-small {
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      @include r(768) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+
+    &-big {
+      padding-top: 170px;
+      padding-bottom: 170px;
+
+      @include r(1572) {
+        padding-top: 150px;
+        padding-bottom: 150px;
+      }
+
+      @include r(1200) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+      }
+
+      @include r(768) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+
+      @include r(576) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+    }
+  }
+
+  &__title {
+    line-height: 1.1;
+
+    &--h1 {
+      font-size: 3.75rem;
+
+      @include r(1520) {
+        font-size: 2.4rem;
+      }
+
+      @include r(960) {
+        font-size: 2rem;
+      }
+
+      @include r(600) {
+        font-size: 1.86rem;
+      }
+
+      @include r(375) {
+        font-size: 1.4286rem;
+      }
+    }
+
+    &--h2 {
+      font-family: $font-mSemiBold;
+
+      font-size: 1.75rem;
+
+      @include r(960) {
+        font-size: 1.5rem;
+      }
+
+      @include r(600) {
+        font-size: 1.3rem;
+      }
+
+      @include r(375) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &__divider {
+    max-width: 156px;
+    margin: 0 auto 30px;
+    background-color: $black;
+    opacity: 1;
+
+    @include r(768) {
+      margin-bottom: 15px;
+    }
+  }
+  
+  &-with-decor {
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 250px;
+      left: 0;
+      top: 0;
+      background-position-y: 0;
+      background-repeat: repeat-x;
+      background-size: cover;
+
+      background-image: url('../img/section-decor.jpg');
+    }
+    
+    & > * {
+      position: relative;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+button {
+  box-shadow: none;
+  border: none;
+  outline: none;
+  background-color: $tr;
+}
+
+.button {
+  position: relative;
+  font-family: $font-mMedium;
+  font-size: $font-small;
+  color: $dark;
+  text-align: center;
+  display: inline-block;
+  outline: none;
+  @include ease;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background-color: $white;
+
+  &:hover {
+    color: $white;
+    background-color: $dark2;
+  }
+
+  @include r(960) {
+    padding: 12px 20px;
+  }
+
+  &--pink {
+    color: $dark3;
+    background-color: $pink;
+
+    svg {
+      stroke: $dark;
+    }
+
+    &:hover {
+      color: $white;
+      background-color: $dark2;
+
+      svg {
+        stroke: $white;
+      }
+    }
+  }
+
+  &--transparent {
+    background-color: $tr;
+    &:hover {
+      background-color: $tr;
+    }
+  }
+
+  &--wide {
+    min-width: 218px;
+  }
+}

@@ -1,0 +1,54 @@
+---
+layout: contacts
+---
+<section class="crumbs background-gray">
+    <div class="container">
+        <div class="d-flex flex-wrap">
+            <a href="#" class="crumbs__item hoverOpacity">Главная</a>
+            <span class="crumbs__item">Контакты</span>
+        </div>
+    </div>
+</section>
+<section class="section--padding-small">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 mb-4 mb-xl-0">
+                <div class="section__title section__title--h2 mb-2 mb-md-3 mb-xl-4">Контакты</div>
+                <div class="mb-1 mb-md-2">Адрес:  г. Екатеринбург, ул.Молодёжная улица, 16</div>
+                <div class="mb-1 mb-md-2">Телефон: <a class="font-sBold" href="tel:73433170742">+7 (343) 317-07-42</a></div>
+                <div class="mb-1 mb-md-2">Почта: <a class="und" href="mailto:info@lagom.ru">info@lagom.ru</a></div>
+                <button class="d-none d-xl-block button button--pink mt-2 mt-md-3">Посмотреть на карте</button>
+                <button class="d-xl-none button button--pink mt-2 mt-md-3" data-src="#popup--call" data-fancybox>Записаться на тренировку</button>
+            </div>
+            <div class="col-xl-6">
+                <div class="contacts-picture__wrapper">
+                    <div class="contacts-picture" style="background-image: url('{{root}}assets/img/contacts-picture.jpg');"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contacts__map-wrapper">
+    <div class="container">
+        <div class="contacts__map-info d-none d-xl-flex align-items-center">
+            <div class="section__map-info-in">
+                <div class="section__title section__title--h2 mb-2 mb-md-3 mb-xl-5">Фитнес-центр Lagom</div>
+                <div class="mb-1 mb-md-2">Адрес:  г. Екатеринбург, ул.Молодёжная улица, 16</div>
+                <div class="mb-1 mb-md-2">Телефон: <a class="font-sBold" href="tel:73433170742">+7 (343) 317-07-42</a></div>
+                <div class="mb-1 mb-md-2">Почта: <a class="und" href="mailto:info@lagom.ru">info@lagom.ru</a></div>
+                <button class="button button--pink mt-2 mt-md-3" data-src="#popup--call" data-fancybox>Записаться на тренировку</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="map" class="contacts__map section--padding-small pt-0"></div>
+</section>
+<div class="balloon__content">
+    <div class="balloon__in">
+        <img class="balloon__logo" src="{{root}}assets/img/logo.png" alt="Logo">
+        <div class="font-small">До 21:00</div>
+    </div>
+</div>
+{{> feedback}}
+<section class="layer"></section>

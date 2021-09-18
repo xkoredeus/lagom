@@ -1,0 +1,85 @@
+$dark: #626979;
+$dark1: #222222;
+$dark2: #3C3C3C;
+$dark3: #141414;
+$white: #ffffff;
+
+$black: #000;
+
+$pink: #F8D7C4;
+$brown: #9E6649;
+
+$gray: #F1EFEE;
+$midGray: #F5F6F6;
+$darkGray: #7A7D84;
+$tr: transparent;
+
+
+.fill-dark {
+  fill: $dark;
+}
+
+.color-white {
+  color: $white;
+}
+
+.color-white-hover {
+  &:hover {
+    color: $white;
+  }
+}
+
+.color-darkGray {
+  color: $dark3;
+}
+
+
+.color-pink {
+  color: $pink;
+}
+
+.color-dark {
+  color: $dark3;
+}
+
+.color-brown {
+  color: $brown;
+}
+
+.color-black {
+  color: $black;
+}
+
+.background-gray {
+  background-color: $gray;
+}
+
+.background-midGray {
+  background-color: $midGray;
+}
+
+.background-pink {
+  background-color: $pink;
+}
+
+.background-brown {
+  background-color: $brown;
+}
+
+.background-darkGray {
+  background-color: $darkGray;
+}
+
+.background-white {
+  background-color: $white;
+}
+
+
+.background-image {
+  @include cv;
+}
+
+
+.hoverOpacity {
+  @include hoverOpacity;
+}

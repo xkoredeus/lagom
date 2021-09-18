@@ -1,0 +1,26 @@
+.tac {
+  text-align: center;
+}
+.tal {
+  text-align: left !important;
+}
+.tar {
+  text-align: right;
+}
+.und {
+  text-decoration: underline;
+}
+.upp {
+  text-transform: uppercase;
+}
+.ttn {
+  text-transform: none !important;
+}
+
+.curp {
+  cursor: pointer;
+}
+
+.ease {
+  @include ease;
+}

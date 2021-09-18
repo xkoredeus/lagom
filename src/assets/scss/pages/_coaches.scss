@@ -1,0 +1,89 @@
+.coaches {
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      font-size: $font-small;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      padding: 3px 5px;
+      border-radius: 3px;
+
+      &:hover {
+        color: $brown;
+      }
+
+      &--active {
+        background-color: $pink;
+      }
+    }
+  }
+}
+
+.coach {
+  position: relative;
+  padding: 20px 12px;
+  background-color: $gray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &-picture {
+    width: 149px;
+    height: 224px;
+    @include cv;
+    margin: 0 auto 20px
+  }
+
+  &-like {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+
+    @include r(768) {
+      right: 10px;
+      top: 10px;
+    }
+
+    &__in {
+      position: relative;
+      width: 35px;
+      height: 35px;
+      border: 1px solid #C4C4C4;
+      background-color: $gray;
+      border-radius: 50%;
+      @include flex-center;
+
+      @include ease;
+
+      &:hover {
+        background-color: $white;
+
+        .coach-like__value {
+          background-color: $tr;
+        }
+      }
+
+      svg {
+        fill: $brown;
+        transform: translateX(1px);
+      }
+    }
+
+    &__value {
+      position: absolute;
+      font-family: $font-mRegular;
+      font-size: 0.625rem;
+      color: $brown;
+      background-color: $gray;
+      right: -1px;
+      top: -1px;
+      @include ease;
+
+      @include r(768) {
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+input,
+textarea,
+select {
+  color: $dark2;
+  padding: 5px 10px;
+  border: 1px solid #C4C4C4;
+  background: $tr;
+  outline: none;
+  @include ease;
+  border-radius: 3px;
+}
+option {
+  color: $dark3;
+}
+textarea {
+  resize: none !important;
+  overflow: hidden;
+  &::placeholder {
+    color: $dark3;
+  }
+}
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder {
+  color: $dark3;
+}
+input:focus,
+textarea:focus,
+input:active,
+textarea:active {
+  color: $dark3;
+  border-color: $dark;
+
+  &::placeholder {
+    color: $dark3;
+  }
+}
+input::-webkit-outer-spin-butёton,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__title {
+    margin-bottom: 12px;
+
+    @include r(768) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.select {
+  &__wrapper {
+    &--gray {
+      select {
+        min-width: 320px;
+        color: $white;
+        background-color: #626979;
+      }
+
+      option {
+        color: $white;
+      }
+    }
+  }
+}

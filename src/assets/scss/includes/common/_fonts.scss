@@ -1,0 +1,58 @@
+$font-mExtraLight: 'Montserrat-ExtraLight';
+$font-mItalic: 'Montserrat-Italic';
+$font-mBold: 'Montserrat-Bold';
+$font-mLight: 'Montserrat-Light';
+$font-mBlack: 'Montserrat-Black';
+$font-mExtraBold: 'Montserrat-ExtraBold';
+$font-mRegular: 'Montserrat-Regular';
+$font-mSemiBold: 'Montserrat-SemiBold';
+$font-mThin: 'Montserrat-Thin';
+$font-mMedium: 'Montserrat-Medium';
+
+.font-mBold {
+  font-family: $font-mBold;
+}
+
+.font-mItalic {
+  font-family: $font-mItalic;
+}
+
+.font-mRegular {
+  font-family: $font-mRegular;
+}
+
+.font-mLight {
+  font-family: $font-mLight;
+}
+.font-mMed {
+  font-family: $font-mMedium;
+}
+
+.font-sBold {
+  font-family: $font-mSemiBold;
+}
+
+$font-small: 0.875rem;
+$font-xsmall: 0.64rem;
+$font-xmedium: 1.125rem;
+$font-medium: 1.25rem;
+$font-exmedium: 1.5rem;
+
+.font-small {
+  font-size: $font-small;
+}
+
+.font-xsmall {
+  font-size: $font-xsmall;
+}
+
+.font-xmedium {
+  font-size: $font-xmedium;
+}
+
+.font-medium {
+  font-size: $font-medium;
+}
+.font-exmedium {
+  font-size: $font-exmedium;
+}

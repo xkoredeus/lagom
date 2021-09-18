@@ -1,0 +1,16 @@
+.link {
+  color: $dark;
+  text-decoration: underline;
+
+  &:hover {
+    color: $brown;
+  }
+
+  &-brown {
+    color: $brown;
+
+    &:hover {
+      color: $dark3;
+    }
+  }
+}

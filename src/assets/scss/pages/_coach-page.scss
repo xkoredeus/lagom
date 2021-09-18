@@ -1,0 +1,40 @@
+.coach-page {
+  &__picture {
+    width: 267px;
+    height: 406px;
+    @include cv;
+
+    @include r(768) {
+      width: 149px;
+      height: 224px;
+    }
+  }
+
+  &__test {
+    margin-bottom: 25px;
+
+    @include r(768) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__progress {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    top: 0;
+    background-color: $darkGray;
+
+    &-wrapper {
+      position: relative;
+      width: 100%;
+      height: 5px;
+      background-color: $white;
+      overflow: hidden;
+
+      @include r(768) {
+        margin-top: 3px;
+      }
+    }
+  }
+}

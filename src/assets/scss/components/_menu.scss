@@ -1,0 +1,30 @@
+.menu {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: $pink;
+  height: 120vh;
+  min-height: 440px;
+  transform: translateX(110%);
+  @include ease-in-out;
+  padding-left: 0;
+  margin: 0;
+
+  &__in {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include ease;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition-delay: .65s;
+    padding: 130px 25px 15px;
+
+    @include r(768) {
+      padding: 110px 25px 15px;
+    }
+  }
+}

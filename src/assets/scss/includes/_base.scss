@@ -1,0 +1,158 @@
+@import "mixins";
+@import "fonts";
+@import "common/fonts";
+@import "common/colors";
+@import "common/one-classes";
+@import "common/selections";
+@import "common/states";
+@import "common/inputs";
+@import "common/buttons";
+@import "common/checkbox";
+@import "common/section";
+@import "common/swiper-custom";
+@import "common/fancybox";
+@import "common/policy";
+@import "common/links";
+@import "common/slider";
+@import "common/quantity";
+
+html, body {
+  position: relative;
+  font-family: $font-mRegular, Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  color: $dark;
+  background-color: $white;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+
+  @include r(600) {
+    font-size: 14px;
+  }
+
+  @include r(375) {
+    font-size: 13px;
+  }
+
+  &.fixed {
+    overflow: hidden;
+    padding-right: 15px;
+  }
+}
+
+a {
+  color: $dark;
+
+  &:hover {
+    color: $brown;
+  }
+}
+
+.container {
+  max-width: 1400px;
+}
+
+.container--small {
+  max-width: 1140px;
+}
+
+.layout {
+  overflow: hidden;
+
+  &__in {
+    position: relative;
+  }
+}
+
+.main {
+  padding-top: 150px;
+
+  @include r(1200) {
+    padding-top: 110px;
+  }
+
+  @include r(768) {
+    padding-top: 88px;
+  }
+
+  @include r(576) {
+    padding-top: 80px;
+  }
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.svg-sprite {
+  position: absolute;
+  bottom: 0;
+}
+
+.crumbs {
+  font-family: $font-mMedium;
+  background-color: $midGray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include r(768) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__item {
+    font-size: $font-small;
+    color: $black;
+
+    &::after {
+      content: '/';
+      margin: 0 10px;
+
+      @include r(768) {
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
+.layer {
+  background-color: $midGray;
+  padding: 15px;
+
+  &--white {
+    background-color: $white;
+  }
+
+  @include r(768) {
+    padding: 6px;
+  }
+}
+
+.hr--thin {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include r(768) {
+    max-width: calc(100% - 30px);
+  }
+}
+
+.list {
+  padding-left: 18px;
+  margin-bottom: 0;
+
+  li {
+    margin-bottom: 15px;
+
+    @include r(768) {
+      margin-bottom: 10px;
+    }
+
+    @include r(576) {
+      margin-bottom: 5px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "includes/fancybox/jquery.fancybox.min";
+@import "includes/swiper/swiper.min";
+@import "includes/bs-grid/grid";
+@import "includes/material/material-components.min";
+@import "includes/base";
+
+@import "components/header";
+@import "components/footer";
+@import "components/burger";
+@import "components/menu";
+@import "components/popups";
+
+@import "pages/home";
+@import "pages/services";
+@import "pages/about";
+@import "pages/coaches";
+@import "pages/coach-page";
+@import "pages/membership";
+@import "pages/contacts";
+@import "pages/studios";
