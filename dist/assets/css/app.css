@@ -23656,6 +23656,13 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .footer__social-link svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .burger {
   position: relative;
   width: 20px;
