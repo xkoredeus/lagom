@@ -23397,23 +23397,23 @@ a:hover {
   }
 }
 
-.list {
+ul {
   padding-left: 18px;
   margin-bottom: 0;
 }
 
-.list li {
+ul li {
   margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 768px) {
-  .list li {
+  ul li {
     margin-bottom: 10px;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .list li {
+  ul li {
     margin-bottom: 5px;
   }
 }
@@ -24835,6 +24835,28 @@ a:hover {
 @media only screen and (max-width: 768px) {
   .coach-page__progress-wrapper {
     margin-top: 3px;
+  }
+}
+
+.coach-page__info h3 {
+  font-family: "Montserrat-SemiBold";
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .coach-page__info h3 {
+    margin-bottom: 0.87rem;
+  }
+}
+
+.coach-page__info ul {
+  margin-bottom: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .coach-page__info ul {
+    margin-bottom: 1rem;
   }
 }
 

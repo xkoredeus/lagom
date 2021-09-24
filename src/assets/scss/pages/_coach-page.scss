@@ -37,4 +37,24 @@
       }
     }
   }
+
+  &__info {
+    h3 {
+      font-family: $font-mSemiBold;
+      font-size: $font-xmedium;
+      margin-bottom: 1rem;
+
+      @include r(768) {
+        margin-bottom: 0.87rem;
+      }
+    }
+
+    ul {
+      margin-bottom: 1.2rem;
+
+      @include r(768) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
 }
